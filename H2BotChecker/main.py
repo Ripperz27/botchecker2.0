@@ -17,9 +17,9 @@ class H2BotChecker():
     def __init__(self):
         self.app = Client(
             name="H2 Bot Checker",
-            api_id=21067590,
-            api_hash='253d38fb02562624b2eba450378e3efa',
-            bot_token='7997422349:AAF7c_4clbj-dw8r-QCwtdqhtYxLY-yuDiM',
+            api_id=,
+            api_hash='',
+            bot_token='',
             plugins=dict(root="plugins"),
             in_memory=True)
 
@@ -75,3 +75,4 @@ if __name__ == "__main__":
 """
 
 #Note: Colocar las proxys aunque por defecto andan desactivadas en session.
+
