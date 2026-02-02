@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════
+  🚀 CÓMO EJECUTAR EL BOT EN TERMUX (CUANDO ESTÁ EN GITHUB)
+═══════════════════════════════════════════════════════════════
+
+PASO 1: Clonar desde GitHub
+─────────────────────────────
+cd ~
+git clone [TU_URL_DE_GITHUB] H2BotChecker
+cd H2BotChecker
+
+Ejemplo:
+  git clone https://github.com/tu-usuario/H2BotChecker.git H2BotChecker
+  cd H2BotChecker
+
+
+PASO 2: Instalación Automática
+───────────────────────────────
+chmod +x install_termux.sh
+bash install_termux.sh
+
+El script instalará todo automáticamente.
+
+
+PASO 3: Configurar Credenciales
+─────────────────────────────────
+nano main.py
+
+Busca y reemplaza:
+  api_id=TU_API_ID
+  api_hash='TU_API_HASH'
+  bot_token='TU_BOT_TOKEN'
+
+Para guardar: Ctrl+O → Enter → Ctrl+X
+
+
+PASO 4: Ejecutar el Bot
+─────────────────────────
+Opción A - En primer plano:
+  bash start_bot.sh
+
+Opción B - En segundo plano (recomendado):
+  bash start_bot_background.sh
+
+
+COMANDOS ÚTILES
+───────────────
+Ver logs:              tail -f bot.log
+Detener bot:           pkill -f "python main.py"
+Verificar instalación: python check_termux.py
+Actualizar código:     git pull
+
+
+═══════════════════════════════════════════════════════════════
+Para más detalles, consulta: QUICK_START_TERMUX.md
+═══════════════════════════════════════════════════════════════
+
